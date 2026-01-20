@@ -8,11 +8,9 @@
 .hero-bg {
     position: absolute;
     inset: 0;
-    background-image: url("images/test.webp");
+    background-image: url("images/banner.webp");
     background-size: cover;
     background-position: center;
-    filter: blur(8px);
-    transform: scale(1.1);
 }
 
 .hero::after{
