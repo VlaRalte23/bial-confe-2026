@@ -1,7 +1,7 @@
 /* Reset */
 .hero {
     position: relative;
-    height: 280px;
+    height: 200px;
     overflow: hidden;
 }
 
@@ -9,7 +9,8 @@
     position: absolute;
     inset: 0;
     background-image: url("images/banner.webp");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: center;
 }
 
@@ -194,7 +195,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
   .hero {
-    height: 220px;
+    height: 121px;
   }
 
   .hero-content h1 {
