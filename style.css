@@ -13,7 +13,9 @@
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
+    filter: brightness(1.25) contrast(00.5px);
 }
+
 
 .hero::before {
   content: "";
@@ -22,7 +24,7 @@
   background-image: url("images/banner.webp");
   background-position: center;
   background-size: cover;
-  filter: blur(18px);
+  filter: blur(15px) brightness(1.00);
   transform: scale(1.1);
   z-index: 0;
 }
@@ -30,8 +32,8 @@
 .hero::after{
     content: "";
     position: absolute;
-    background:rgba(0,0,0,0.25);
     inset: 0;
+    background: rgba(0,0,0,0.12); /* lighter overlay */
     z-index: 1;
 }
 
@@ -141,8 +143,8 @@ main h2 {
     height: 180%;
     object-fit: cover;
     display: block;
-    filter: blur(2px) brightness(0.75);
-    transform: scale(1.05);
+    filter: brightness(0.90);
+    transform: scale(1.00);
 }
 
 .gallery img:hover {
@@ -168,7 +170,7 @@ main h2 {
     padding: 12px;
     background: linear-gradient(to top, rgba(0,0,0,0.65), rgba(0,0,0,0));
     color: #fff;
-    font-size: 22px;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -242,4 +244,22 @@ footer {
   .gallery img {
     height: 220px;
   }
+}
+
+
+.social-links {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+.social-links img:hover {
+  opacity: 1;
+  transform: scale(1.1);
 }
